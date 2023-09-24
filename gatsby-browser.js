@@ -4,7 +4,7 @@ exports.onInitialClientRender = function (n, config) {
 
   // load initial script
   const s = document.createElement('script')
-  s.setAttribute('src', `https://unpkg.com/mermaid@${version}/dist/mermaid.min.js`)
+  s.setAttribute('src', 'https://unpkg.com/mermaid@' + version + '/dist/mermaid.min.js')
   document.head.appendChild(s)
 
   // XXX: ugly hack because onRouteUpdate doesn't know when the react is done
